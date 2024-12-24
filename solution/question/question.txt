@@ -1,0 +1,74 @@
+===============================================================================
+
+1. Instructions
+
+- replace any [...] with free text,
+  and
+- replace the [?] with an X if you have completed that stage,
+- replace the [?] with an * if you have attempted that stage, but you know
+  it doesn't work completely; document why you think it doesn't work, plus
+  what you would do to fix the problem, at the end of the marksheet.
+
+===============================================================================
+
+2. Information
+
+So that we can calibrate and improve the assignment in the future, give us
+a rough idea how long (in hours) you spent on it *in total*:
+
+effort : [55] hours
+
+===============================================================================
+
+3. Citation
+
+Clearly it might have an influence on your mark, but the use of third-party
+resources is allowed *iff.* it
+
+- hasn't been explicitly prohibited by the assignment description, *and*
+- is correctly cited.
+
+Let us know any third-party source code or resources you used (if any) so
+it's clear what's your work and what isn't:
+
+[https://vlsiverify.com/verilog/]
+
+===============================================================================
+
+4. Marking
+
+The following gives a stage-by-stage description of the assignment marking
+scheme.  Note this acts as an indicative guideline only, including weights
+for each more obvious aspect (e.g., functional correctness); other aspects
+outside this list can warrant an increase/decrease in marks, with examples
+including hard to quantify features such as style, efficiency, robustness, 
+generality, or realism of a solution.  Put another way, identifying then
+reasoning about these latter aspects forms part of the assessment, so they
+are not (necessarily) detailed explicitly.
+
+    Stage 1 : implement
+[X]           - sbox         module                                  ( 20%)
+[X]           - key_schedule module                                  ( 10%)
+[X]           - round        module                                  ( 10%)
+
+[X] Stage 2 : implement encrypt_v1 module, combinatorial design      ( 20%)
+
+[X] Stage 3 : implement encrypt_v2 module, iterative     design      ( 20%)
+
+[X] Stage 4 : implement encrypt_v3 module, pipelined     design      ( 20%)
+
+                                                                     ------
+                                                                     (100%)
+
+===============================================================================
+
+5. Documentation
+
+Any other documentation, notes or comments that you think are important or
+might be easy to overlook (e.g., a subtle issue or technique in associated
+source code) should go here:
+
+[ For encryp_v2, I came up with two solutions that store the encrypt_v2_secondSol.v and encryp_v2 files. The key component of the encrypt_v2.v is three always blocks where first two 
+keep track of the negative and positive edge of req and third keep track of positive edge of the clock. The second solution in encrypt_v2_secondSol.v is based on the one always that only keeps track of the changes in the clock. 
+I am sorry for the inconvience but I could not decide which solution is better so I decide to upload both of them. ]
+===============================================================================
